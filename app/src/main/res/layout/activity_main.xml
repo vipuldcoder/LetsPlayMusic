@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/todaysPopularHits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openHitSongList">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="16dp"
+                android:background="#8e24aa">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/play"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:id="@+id/person_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Today's Popular"
+                    android:textColor="@color/icons"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/person_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/person_name"
+                    android:text="Hits"
+                    android:textColor="@color/icons"
+                    android:textSize="30sp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="85dp"
+                    android:background="#FFC300" />
+
+                <TextView
+                    android:id="@+id/person_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Hollywood Popular Hits..."
+                    android:textColor="@color/icons"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/topAlbums"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openTopAlbumSongList">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="16dp"
+                android:background="#e91e63">
+
+                <ImageView
+                    android:id="@+id/topAlbumsImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/play_a"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:id="@+id/bigHeadingS2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Top Albums"
+                    android:textColor="@color/icons"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/smallHeadindSub2.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bigHeadingS2"
+                    android:text="Popular this week"
+                    android:textColor="@color/icons"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    android:background="#1de9b6" />
+
+                <TextView
+                    android:id="@+id/smallHeadindSub2.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Hollywood Popular Hits..."
+                    android:textColor="@color/icons"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/musicForDriving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openSongListForDriving">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="16dp"
+                android:background="#ffea00">
+
+                <ImageView
+                    android:id="@+id/musicForDrivingImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/play_b"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:id="@+id/headingS4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Music for Driving"
+                    android:textColor="@color/primary_text"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/smallHeadindSub3.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/headingS4"
+                    android:text="Popular this week"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    android:background="#303f9f" />
+
+                <TextView
+                    android:id="@+id/smallHeadindSub3.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Best of Justin Beber"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/fellingLucky"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="openFeelingLucky">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="16dp"
+                android:background="#6200ea">
+
+                <ImageView
+                    android:id="@+id/fellingLuckyImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="2dp"
+                    android:src="@drawable/play_c"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="2dp" />
+
+                <TextView
+                    android:id="@+id/bigHeadingS4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="Felling lucky?"
+                    android:textColor="@color/icons"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/smallHeadindSub4.1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bigHeadingS4"
+                    android:text="Popular this week"
+                    android:textColor="@color/icons"
+                    android:textSize="15dp" />
+
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="4dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="70dp"
+                    android:background="#e91e63" />
+
+                <TextView
+                    android:id="@+id/smallHeadindSub4.2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Hollywood Popular Hits..."
+                    android:textColor="@color/icons"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

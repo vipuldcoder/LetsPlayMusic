@@ -1,0 +1,16 @@
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=25] -->
+    <string name="app_name">Let\'s Play Music</string>
+
+    <!-- Category name for Today's Popular Hits Songs [CHAR LIMIT=30] -->
+    <string name="todays_popular_hits">Today\'s Popular Hits</string>
+
+    <!-- Category name for Top Albums [CHAR LIMIT=30] -->
+    <string name="top_albums">Top Albums</string>
+
+    <!-- Category name for Music For Driving [CHAR LIMIT=20] -->
+    <string name="music_for_driving">Music For Driving</string>
+
+    <!-- Category name for Felling Lucky [CHAR LIMIT=20] -->
+    <string name="felling_lucky">Felling Lucky</string>
+</resources>
